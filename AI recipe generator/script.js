@@ -51,7 +51,7 @@ async function generateRecipe() {
 
   } catch (error) {
     console.error("AI Error:", error);
-    statusText.textContent = "❌ AI busy hai, offline recipe dikha rahe hain.";
+    statusText.textContent = "❌ AI is busy, offline recipe showing here.";
     resultBox.innerHTML = `
       <h2>🍽️ Delicious ${cuisine} Recipe with ${ingredients}</h2>
       <p style="white-space:pre-wrap; line-height:1.7; margin-top:10px;">
