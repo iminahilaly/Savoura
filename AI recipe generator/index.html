@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Recipe Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo"><img src="https://spiffy-brigadeiros-59a9ed.netlify.app/images/Savoura%20Logo.png.jpeg" alt="Savoura" style="height:45px;"></div>
+
+        <span class="nav-label">AI RECIPE GENERATOR</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+
+            <span class="tag">✨ YOUR PERSONAL AI CHEF</span>
+
+            <h1>
+                Turn Your Ingredients Into
+                <span>Delicious Recipes</span>
+            </h1>
+
+            <p>
+                Tell us what ingredients you have.
+                Our AI chef will create something delicious for you.
+            </p>
+
+        </section>
+
+        <section class="generator-card">
+
+            <div class="section-heading">
+                <h2>🥕 What's in your kitchen?</h2>
+                <p>Enter ingredients separated by commas.</p>
+            </div>
+
+            <textarea
+                id="ingredients"
+                placeholder="Example: Chicken, potatoes, tomatoes, onions..."
+            ></textarea>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="cuisine">Cuisine</label>
+
+                    <select id="cuisine">
+                        <option>Any Cuisine</option>
+                        <option>Pakistani</option>
+                        <option>Italian</option>
+                        <option>Chinese</option>
+                        <option>Indian</option>
+                        <option>Mexican</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="diet">Diet Preference</label>
+
+                    <select id="diet">
+                        <option>No Preference</option>
+                        <option>Vegetarian</option>
+                        <option>Vegan</option>
+                        <option>Gluten Free</option>
+                    </select>
+                </div>
+
+            </div>
+                <div class="form-group">
+                    <label for="prepTime">Preparation Time</label>
+                    <select id="prepTime">
+                        <option>Any Time</option>
+                        <option>Under 15 mins - Quick</option>
+                        <option>15 - 30 mins</option>
+                        <option>30 - 60 mins</option>
+                        <option>1 Hour+ - Detailed</option>
+                    </select>
+            </div>
+
+            <button id="generateBtn">
+                ✨ Generate My Recipe
+            </button>
+
+            <p id="status">Your AI Chef is waiting!</p>
+
+        </section>
+
+        <section class="result-card" id="result">
+
+            <div class="empty-state">
+                <div class="empty-icon">🍲</div>
+
+                <h2>Your Recipe Awaits!</h2>
+
+                <p>
+                    Enter your ingredients and let AI
+                    create a delicious recipe for you.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Made with ❤️ for food lovers
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
